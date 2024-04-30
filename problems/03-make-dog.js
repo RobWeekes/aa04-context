@@ -1,4 +1,43 @@
-// Your code here 
+
+
+
+class Dog{
+	constructor(name){
+		this.name = name
+	}
+	//instance methods
+	changeName(newName){
+		this.name = newName
+	}
+
+	speak(word){
+		return `${this.name} says ${word}`
+	}
+
+	//static methods
+	static makeJet(){
+		return new Dog('Jet')
+	}
+}
+
+
+
+let dog1 = Dog.makeJet(); // returns an object
+
+console.log(dog1.name);                 // Jet
+console.log(dog1.speak("hello"));       // Jet says hello
+console.log(dog1.changeName("Freyja")); // Freyja // this is returning undefined
+console.log(dog1.name);                 // Freyja
+console.log(dog1.speak("hello"));       // Freyja says hello
+
+let dog2 = Dog.makeJet();
+// console.log(dog2.name);                 // Jet
+
+
+
+
+
+
 
 
 /*****************************************************************************/
