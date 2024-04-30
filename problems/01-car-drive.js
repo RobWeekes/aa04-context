@@ -2,7 +2,8 @@ class Car{
 	constructor(speed = 0){
 		this.speed = speed
 	}
-	drive(newSpeed){
+	drive(newSpeed) {
+		
 		this.speed = newSpeed
 		return newSpeed
 	}
